@@ -1,0 +1,1103 @@
+<!--
+===================================================================================
+    Project: Image Classification Dataset
+    Description: Large image classification dataset with multiple categories 
+                 for training CNN models, transfer learning, and image recognition tasks.
+    
+    Author: Molla Samser
+    Email: help@rskworld.in
+    Phone: +91 93305 39277
+    Website: https://rskworld.in
+    
+    © 2025 RSK World. All rights reserved.
+===================================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Large image classification dataset with multiple categories for training CNN models, transfer learning, and image recognition tasks.">
+    <meta name="keywords" content="image classification, dataset, CNN, deep learning, transfer learning, computer vision, machine learning">
+    <meta name="author" content="Molla Samser">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Image Classification Dataset - RSK World">
+    <meta property="og:description" content="Large image classification dataset with multiple categories for training CNN models, transfer learning, and image recognition tasks.">
+    <meta property="og:image" content="./image-classification.png">
+    <meta property="og:url" content="https://rskworld.in">
+    <meta property="og:type" content="website">
+    
+    <title>Image Classification Dataset | RSK World</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader-content">
+            <div class="neural-network-loader">
+                <div class="neuron n1"></div>
+                <div class="neuron n2"></div>
+                <div class="neuron n3"></div>
+                <div class="neuron n4"></div>
+                <div class="neuron n5"></div>
+                <div class="connection c1"></div>
+                <div class="connection c2"></div>
+                <div class="connection c3"></div>
+                <div class="connection c4"></div>
+            </div>
+            <p class="loader-text">Loading Neural Network...</p>
+            <div class="loader-progress">
+                <div class="loader-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-overlay"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="https://rskworld.in" class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <span>RSK World</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#demo">Live Demo</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#analytics">Analytics</a>
+                <a href="#download">Download</a>
+            </div>
+            <div class="nav-actions">
+                <a href="https://rskworld.in/contact.php" class="nav-contact">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#features">Features</a>
+        <a href="#demo">Live Demo</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#download">Download</a>
+        <a href="https://rskworld.in/contact.php">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-badge animate-float">
+                <div class="badge-pulse"></div>
+                <i class="fas fa-image"></i>
+                <span>Image Data</span>
+                <span class="badge-new">NEW</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Image Classification</span>
+                <span class="gradient-text typing-effect">Dataset</span>
+            </h1>
+            <p class="hero-description">
+                Large image classification dataset with <strong>10,000+ images</strong> across <strong>15 categories</strong> 
+                for training CNN models, transfer learning, and image recognition tasks.
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-icon"><i class="fas fa-images"></i></div>
+                    <span class="stat-value" data-count="10000">0</span>
+                    <span class="stat-label">Images</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fas fa-th-large"></i></div>
+                    <span class="stat-value" data-count="15">0</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fas fa-database"></i></div>
+                    <span class="stat-value" data-count="3">0</span>
+                    <span class="stat-label">Splits</span>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fas fa-percentage"></i></div>
+                    <span class="stat-value" data-count="98">0</span>
+                    <span class="stat-label">Accuracy</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="#download" class="btn btn-primary btn-glow">
+                    <i class="fas fa-download"></i>
+                    Download Dataset
+                    <span class="btn-shine"></span>
+                </a>
+                <a href="#demo" class="btn btn-secondary">
+                    <i class="fas fa-play"></i>
+                    Try Live Demo
+                </a>
+                <a href="#analytics" class="btn btn-outline">
+                    <i class="fas fa-chart-bar"></i>
+                    View Analytics
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="visual-3d-container">
+                <div class="rotating-cube">
+                    <div class="cube-face front"><i class="fas fa-dog"></i></div>
+                    <div class="cube-face back"><i class="fas fa-car"></i></div>
+                    <div class="cube-face right"><i class="fas fa-tree"></i></div>
+                    <div class="cube-face left"><i class="fas fa-utensils"></i></div>
+                    <div class="cube-face top"><i class="fas fa-building"></i></div>
+                    <div class="cube-face bottom"><i class="fas fa-plane"></i></div>
+                </div>
+            </div>
+            <div class="image-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <div class="sample-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-dog"></i>
+                        </div>
+                        <span>Animals</span>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="sample-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <span>Vehicles</span>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="sample-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <span>Nature</span>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="sample-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <span>Food</span>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="sample-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <span>Buildings</span>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="sample-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <span>Fashion</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Scrolling Marquee -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span>🖼️ 10,000+ Images</span>
+            <span>🏷️ 15 Categories</span>
+            <span>🧠 CNN Ready</span>
+            <span>📊 Pre-split Data</span>
+            <span>🚀 Transfer Learning</span>
+            <span>⚡ High Quality</span>
+            <span>📁 Organized Structure</span>
+            <span>🔧 Python Scripts</span>
+            <span>🖼️ 10,000+ Images</span>
+            <span>🏷️ 15 Categories</span>
+            <span>🧠 CNN Ready</span>
+            <span>📊 Pre-split Data</span>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-star"></i> Why Choose Us</span>
+                <h2 class="section-title">Powerful <span class="gradient-text">Features</span></h2>
+                <p class="section-desc">Everything you need for your image classification projects</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-card-large">
+                    <div class="feature-glow"></div>
+                    <div class="feature-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Multiple Categories</h3>
+                    <p>Diverse image categories covering animals, vehicles, nature, objects, food, buildings, fashion, and more for comprehensive training.</p>
+                    <div class="feature-tags">
+                        <span>15 Categories</span>
+                        <span>Diverse</span>
+                        <span>Balanced</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Labeled Data</h3>
+                    <p>All images properly labeled and organized by category.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Pre-split Sets</h3>
+                    <p>Train, validation, and test sets following best practices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Various Sizes</h3>
+                    <p>Multiple resolutions for different model architectures.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>CNN Ready</h3>
+                    <p>Optimized format for Convolutional Neural Networks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Transfer Learning</h3>
+                    <p>Compatible with VGG, ResNet, and EfficientNet.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Augmentation</h3>
+                    <p>Built-in augmentation scripts included.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-play-circle"></i> Interactive</span>
+                <h2 class="section-title">Live <span class="gradient-text">Prediction Demo</span></h2>
+                <p class="section-desc">Upload an image and see the AI classification in action</p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-upload-area" id="dropZone">
+                    <div class="upload-content">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <h4>Drag & Drop Image Here</h4>
+                        <p>or click to browse</p>
+                        <input type="file" id="imageInput" accept="image/*" hidden>
+                        <button class="btn btn-secondary" onclick="document.getElementById('imageInput').click()">
+                            <i class="fas fa-folder-open"></i> Choose File
+                        </button>
+                    </div>
+                    <div class="upload-preview" id="uploadPreview" style="display: none;">
+                        <img id="previewImage" src="" alt="Preview">
+                        <button class="remove-preview" id="removePreview">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="demo-results">
+                    <div class="results-header">
+                        <h4><i class="fas fa-chart-bar"></i> Classification Results</h4>
+                        <span class="processing-indicator" id="processingIndicator">
+                            <span class="spinner"></span> Processing...
+                        </span>
+                    </div>
+                    <div class="results-content" id="resultsContent">
+                        <div class="no-results">
+                            <i class="fas fa-image"></i>
+                            <p>Upload an image to see predictions</p>
+                        </div>
+                    </div>
+                    <div class="prediction-results" id="predictionResults" style="display: none;">
+                        <div class="top-prediction">
+                            <div class="prediction-label">
+                                <i class="fas fa-trophy"></i>
+                                <span id="topClass">Animals</span>
+                            </div>
+                            <span class="prediction-confidence" id="topConfidence">95.8%</span>
+                        </div>
+                        <div class="all-predictions" id="allPredictions">
+                            <!-- Predictions will be inserted here -->
+                        </div>
+                        <div class="prediction-time">
+                            <i class="fas fa-clock"></i>
+                            <span>Inference time: <strong id="inferenceTime">0.24s</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-samples">
+                <h4>Try with sample images:</h4>
+                <div class="sample-images">
+                    <button class="sample-btn" data-category="Animals">
+                        <i class="fas fa-dog"></i>
+                        <span>Animals</span>
+                    </button>
+                    <button class="sample-btn" data-category="Vehicles">
+                        <i class="fas fa-car"></i>
+                        <span>Vehicles</span>
+                    </button>
+                    <button class="sample-btn" data-category="Nature">
+                        <i class="fas fa-tree"></i>
+                        <span>Nature</span>
+                    </button>
+                    <button class="sample-btn" data-category="Food">
+                        <i class="fas fa-utensils"></i>
+                        <span>Food</span>
+                    </button>
+                    <button class="sample-btn" data-category="Buildings">
+                        <i class="fas fa-building"></i>
+                        <span>Buildings</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-images"></i> Dataset Preview</span>
+                <h2 class="section-title">Image <span class="gradient-text">Gallery</span></h2>
+                <p class="section-desc">Explore sample images from each category</p>
+            </div>
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="animals">Animals</button>
+                <button class="filter-btn" data-filter="vehicles">Vehicles</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="buildings">Buildings</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be generated by JS -->
+            </div>
+            <div class="gallery-pagination">
+                <button class="page-btn" id="prevPage"><i class="fas fa-chevron-left"></i></button>
+                <span class="page-info">Page <span id="currentPage">1</span> of <span id="totalPages">3</span></span>
+                <button class="page-btn" id="nextPage"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Section -->
+    <section id="analytics" class="analytics-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-chart-line"></i> Data Insights</span>
+                <h2 class="section-title">Dataset <span class="gradient-text">Analytics</span></h2>
+                <p class="section-desc">Comprehensive statistics and distribution analysis</p>
+            </div>
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <div class="card-header">
+                        <h4><i class="fas fa-chart-pie"></i> Category Distribution</h4>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <div class="card-header">
+                        <h4><i class="fas fa-chart-bar"></i> Split Distribution</h4>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="splitChart"></canvas>
+                    </div>
+                </div>
+                <div class="analytics-card stats-card">
+                    <div class="card-header">
+                        <h4><i class="fas fa-info-circle"></i> Quick Stats</h4>
+                    </div>
+                    <div class="quick-stats">
+                        <div class="quick-stat">
+                            <i class="fas fa-images"></i>
+                            <div>
+                                <span class="stat-num">10,000</span>
+                                <span class="stat-text">Total Images</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat">
+                            <i class="fas fa-th-large"></i>
+                            <div>
+                                <span class="stat-num">15</span>
+                                <span class="stat-text">Categories</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat">
+                            <i class="fas fa-hdd"></i>
+                            <div>
+                                <span class="stat-num">~500MB</span>
+                                <span class="stat-text">Dataset Size</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat">
+                            <i class="fas fa-expand"></i>
+                            <div>
+                                <span class="stat-num">224×224</span>
+                                <span class="stat-text">Avg Resolution</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat">
+                            <i class="fas fa-file-image"></i>
+                            <div>
+                                <span class="stat-num">JPG/PNG</span>
+                                <span class="stat-text">Formats</span>
+                            </div>
+                        </div>
+                        <div class="quick-stat">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <span class="stat-num">100%</span>
+                                <span class="stat-text">Labeled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="analytics-card">
+                    <div class="card-header">
+                        <h4><i class="fas fa-chart-area"></i> Model Performance</h4>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="performanceChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-folder-open"></i> Dataset Overview</span>
+                <h2 class="section-title">Image <span class="gradient-text">Categories</span></h2>
+                <p class="section-desc">Explore all 15 diverse categories in the dataset</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="animals">
+                    <div class="category-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-dog"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Animals</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 1,500+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="vehicles">
+                    <div class="category-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Vehicles</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 1,200+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="nature">
+                    <div class="category-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Nature</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 1,000+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 67%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="food">
+                    <div class="category-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Food</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 800+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 53%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="buildings">
+                    <div class="category-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Buildings</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 900+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="fashion">
+                    <div class="category-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Fashion</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 700+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 47%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="aircraft">
+                    <div class="category-image" style="background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%);">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Aircraft</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 600+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="sports">
+                    <div class="category-image" style="background: linear-gradient(135deg, #f5af19 0%, #f12711 100%);">
+                        <i class="fas fa-futbol"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Sports</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 800+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 53%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="instruments">
+                    <div class="category-image" style="background: linear-gradient(135deg, #c471f5 0%, #fa71cd 100%);">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Instruments</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 500+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 33%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="electronics">
+                    <div class="category-image" style="background: linear-gradient(135deg, #0093e9 0%, #80d0c7 100%);">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Electronics</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 700+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 47%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="furniture">
+                    <div class="category-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Furniture</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 600+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="plants">
+                    <div class="category-image" style="background: linear-gradient(135deg, #96e6a1 0%, #d4fc79 100%);">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="category-info">
+                        <h4>Plants</h4>
+                        <div class="category-meta">
+                            <span class="category-count"><i class="fas fa-images"></i> 700+ images</span>
+                            <div class="category-progress">
+                                <div class="progress-bar" style="width: 47%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Examples Section -->
+    <section id="usage" class="usage-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-code"></i> Getting Started</span>
+                <h2 class="section-title">Code <span class="gradient-text">Examples</span></h2>
+                <p class="section-desc">Quick start guide with multiple frameworks</p>
+            </div>
+            <div class="code-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="python">
+                        <i class="fab fa-python"></i> Python
+                    </button>
+                    <button class="tab-btn" data-tab="tensorflow">
+                        <i class="fas fa-brain"></i> TensorFlow
+                    </button>
+                    <button class="tab-btn" data-tab="pytorch">
+                        <i class="fas fa-fire"></i> PyTorch
+                    </button>
+                    <button class="tab-btn" data-tab="keras">
+                        <i class="fas fa-cubes"></i> Keras
+                    </button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="python">
+                        <div class="code-header">
+                            <span><i class="fab fa-python"></i> data_loader.py</span>
+                            <button class="copy-btn" onclick="copyCode('python')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <pre><code id="pythonCode"><span class="comment"># Image Classification Dataset - rskworld.in</span>
+<span class="comment"># Author: Molla Samser | Email: help@rskworld.in</span>
+
+<span class="keyword">import</span> os
+<span class="keyword">import</span> numpy <span class="keyword">as</span> np
+<span class="keyword">from</span> PIL <span class="keyword">import</span> Image
+<span class="keyword">import</span> cv2
+
+<span class="keyword">def</span> <span class="function">load_dataset</span>(data_dir, img_size=(<span class="number">224</span>, <span class="number">224</span>)):
+    <span class="string">"""Load and preprocess images from dataset."""</span>
+    images, labels = [], []
+    categories = sorted(os.listdir(data_dir))
+    
+    <span class="keyword">for</span> idx, category <span class="keyword">in</span> enumerate(categories):
+        category_path = os.path.join(data_dir, category)
+        <span class="keyword">for</span> img_name <span class="keyword">in</span> os.listdir(category_path):
+            img = Image.open(os.path.join(category_path, img_name))
+            img = img.resize(img_size).convert(<span class="string">'RGB'</span>)
+            images.append(np.array(img) / <span class="number">255.0</span>)
+            labels.append(idx)
+    
+    <span class="keyword">return</span> np.array(images), np.array(labels), categories
+
+<span class="comment"># Usage</span>
+X_train, y_train, classes = load_dataset(<span class="string">'dataset/train'</span>)
+<span class="keyword">print</span>(<span class="string">f"Loaded {len(X_train)} images from {len(classes)} classes"</span>)</code></pre>
+                    </div>
+                    <div class="tab-pane" id="tensorflow">
+                        <div class="code-header">
+                            <span><i class="fas fa-brain"></i> train_tf.py</span>
+                            <button class="copy-btn" onclick="copyCode('tensorflow')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <pre><code id="tensorflowCode"><span class="comment"># TensorFlow Training - rskworld.in</span>
+<span class="comment"># Author: Molla Samser | help@rskworld.in</span>
+
+<span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf
+<span class="keyword">from</span> tensorflow.keras <span class="keyword">import</span> layers, models
+
+<span class="comment"># Data Generator with Augmentation</span>
+train_gen = tf.keras.preprocessing.image.ImageDataGenerator(
+    rescale=<span class="number">1./255</span>,
+    rotation_range=<span class="number">20</span>,
+    horizontal_flip=<span class="keyword">True</span>,
+    zoom_range=<span class="number">0.2</span>
+)
+
+train_data = train_gen.flow_from_directory(
+    <span class="string">'dataset/train'</span>,
+    target_size=(<span class="number">224</span>, <span class="number">224</span>),
+    batch_size=<span class="number">32</span>
+)
+
+<span class="comment"># Build Model</span>
+model = models.Sequential([
+    layers.Conv2D(<span class="number">32</span>, <span class="number">3</span>, activation=<span class="string">'relu'</span>, input_shape=(<span class="number">224</span>,<span class="number">224</span>,<span class="number">3</span>)),
+    layers.MaxPooling2D(),
+    layers.Conv2D(<span class="number">64</span>, <span class="number">3</span>, activation=<span class="string">'relu'</span>),
+    layers.MaxPooling2D(),
+    layers.Conv2D(<span class="number">128</span>, <span class="number">3</span>, activation=<span class="string">'relu'</span>),
+    layers.GlobalAveragePooling2D(),
+    layers.Dense(<span class="number">256</span>, activation=<span class="string">'relu'</span>),
+    layers.Dropout(<span class="number">0.5</span>),
+    layers.Dense(<span class="number">15</span>, activation=<span class="string">'softmax'</span>)
+])
+
+model.compile(optimizer=<span class="string">'adam'</span>, loss=<span class="string">'categorical_crossentropy'</span>, metrics=[<span class="string">'accuracy'</span>])</code></pre>
+                    </div>
+                    <div class="tab-pane" id="pytorch">
+                        <div class="code-header">
+                            <span><i class="fas fa-fire"></i> train_pytorch.py</span>
+                            <button class="copy-btn" onclick="copyCode('pytorch')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <pre><code id="pytorchCode"><span class="comment"># PyTorch Training - rskworld.in</span>
+<span class="comment"># Author: Molla Samser | help@rskworld.in</span>
+
+<span class="keyword">import</span> torch
+<span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn
+<span class="keyword">from</span> torchvision <span class="keyword">import</span> transforms, datasets
+<span class="keyword">from</span> torch.utils.data <span class="keyword">import</span> DataLoader
+
+<span class="comment"># Transforms</span>
+transform = transforms.Compose([
+    transforms.Resize((<span class="number">224</span>, <span class="number">224</span>)),
+    transforms.RandomHorizontalFlip(),
+    transforms.ToTensor(),
+    transforms.Normalize([<span class="number">0.485</span>, <span class="number">0.456</span>, <span class="number">0.406</span>], 
+                        [<span class="number">0.229</span>, <span class="number">0.224</span>, <span class="number">0.225</span>])
+])
+
+<span class="comment"># Dataset</span>
+train_data = datasets.ImageFolder(<span class="string">'dataset/train'</span>, transform)
+train_loader = DataLoader(train_data, batch_size=<span class="number">32</span>, shuffle=<span class="keyword">True</span>)
+
+<span class="comment"># Model</span>
+<span class="keyword">class</span> <span class="function">CNN</span>(nn.Module):
+    <span class="keyword">def</span> <span class="function">__init__</span>(self, num_classes=<span class="number">15</span>):
+        <span class="keyword">super</span>().__init__()
+        self.features = nn.Sequential(
+            nn.Conv2d(<span class="number">3</span>, <span class="number">32</span>, <span class="number">3</span>), nn.ReLU(), nn.MaxPool2d(<span class="number">2</span>),
+            nn.Conv2d(<span class="number">32</span>, <span class="number">64</span>, <span class="number">3</span>), nn.ReLU(), nn.MaxPool2d(<span class="number">2</span>),
+        )
+        self.classifier = nn.Linear(<span class="number">64</span>*<span class="number">54</span>*<span class="number">54</span>, num_classes)</code></pre>
+                    </div>
+                    <div class="tab-pane" id="keras">
+                        <div class="code-header">
+                            <span><i class="fas fa-cubes"></i> transfer_learning.py</span>
+                            <button class="copy-btn" onclick="copyCode('keras')">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+                        <pre><code id="kerasCode"><span class="comment"># Transfer Learning - rskworld.in</span>
+<span class="comment"># Author: Molla Samser | help@rskworld.in</span>
+
+<span class="keyword">from</span> tensorflow.keras.applications <span class="keyword">import</span> ResNet50
+<span class="keyword">from</span> tensorflow.keras <span class="keyword">import</span> layers, Model
+
+<span class="comment"># Load pre-trained ResNet50</span>
+base_model = ResNet50(
+    weights=<span class="string">'imagenet'</span>,
+    include_top=<span class="keyword">False</span>,
+    input_shape=(<span class="number">224</span>, <span class="number">224</span>, <span class="number">3</span>)
+)
+
+<span class="comment"># Freeze base layers</span>
+base_model.trainable = <span class="keyword">False</span>
+
+<span class="comment"># Add custom classifier</span>
+x = layers.GlobalAveragePooling2D()(base_model.output)
+x = layers.Dense(<span class="number">512</span>, activation=<span class="string">'relu'</span>)(x)
+x = layers.Dropout(<span class="number">0.5</span>)(x)
+x = layers.Dense(<span class="number">256</span>, activation=<span class="string">'relu'</span>)(x)
+output = layers.Dense(<span class="number">15</span>, activation=<span class="string">'softmax'</span>)(x)
+
+model = Model(base_model.input, output)
+model.compile(
+    optimizer=<span class="string">'adam'</span>,
+    loss=<span class="string">'categorical_crossentropy'</span>,
+    metrics=[<span class="string">'accuracy'</span>]
+)</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-glow"></div>
+                <div class="download-info">
+                    <div class="download-badges">
+                        <span class="badge badge-success">
+                            <i class="fas fa-graduation-cap"></i> Beginner Friendly
+                        </span>
+                        <span class="badge badge-info">
+                            <i class="fas fa-check-circle"></i> Ready to Use
+                        </span>
+                    </div>
+                    <h2>Download the Dataset</h2>
+                    <p>Get started with image classification using this comprehensive dataset. Includes training, validation, and test splits with example code.</p>
+                    <ul class="download-features">
+                        <li><i class="fas fa-check"></i> 10,000+ labeled images</li>
+                        <li><i class="fas fa-check"></i> 15 unique categories</li>
+                        <li><i class="fas fa-check"></i> PNG & JPG formats</li>
+                        <li><i class="fas fa-check"></i> Ready-to-use Python scripts</li>
+                        <li><i class="fas fa-check"></i> Comprehensive documentation</li>
+                        <li><i class="fas fa-check"></i> MIT License</li>
+                    </ul>
+                </div>
+                <div class="download-action">
+                    <div class="file-info">
+                        <div class="file-icon">
+                            <i class="fas fa-file-archive"></i>
+                        </div>
+                        <div class="file-details">
+                            <span class="file-name">image-classification.zip</span>
+                            <span class="file-size">~500 MB</span>
+                        </div>
+                    </div>
+                    <div class="download-progress" id="downloadProgress" style="display: none;">
+                        <div class="progress-info">
+                            <span>Downloading...</span>
+                            <span id="downloadPercent">0%</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar-fill" id="progressFill"></div>
+                        </div>
+                    </div>
+                    <a href="./image-classification.zip" class="btn btn-download btn-glow" id="downloadBtn">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                        <span class="btn-shine"></span>
+                    </a>
+                    <a href="https://github.com" class="btn btn-github">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                    <div class="download-meta">
+                        <span><i class="fas fa-download"></i> 2,500+ downloads</span>
+                        <span><i class="fas fa-star"></i> 4.9/5 rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-quote-left"></i> User Feedback</span>
+                <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"This dataset is perfect for learning image classification. Well organized and easy to use!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DS</div>
+                        <div class="author-info">
+                            <strong>Data Science Student</strong>
+                            <span>University Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Great quality images and the pre-split structure saved me hours of preprocessing work."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ML</div>
+                        <div class="author-info">
+                            <strong>ML Engineer</strong>
+                            <span>Tech Company</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The Python scripts included make it super easy to get started with training models."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RS</div>
+                        <div class="author-info">
+                            <strong>Research Scholar</strong>
+                            <span>AI Research Lab</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h3><i class="fas fa-headset"></i> Need Help?</h3>
+                    <p>Feel free to reach out if you have any questions about the dataset or need assistance with your image classification project.</p>
+                </div>
+                <div class="contact-details">
+                    <a href="mailto:help@rskworld.in" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>help@rskworld.in</span>
+                    </a>
+                    <a href="tel:+919330539277" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 93305 39277</span>
+                    </a>
+                    <a href="https://rskworld.in" class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <span>rskworld.in</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="https://rskworld.in" class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>RSK World</span>
+                    </a>
+                    <p>Providing quality datasets and resources for machine learning and data science enthusiasts.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="https://rskworld.in">Home</a>
+                    <a href="https://rskworld.in/datasets">Datasets</a>
+                    <a href="https://rskworld.in/projects">Projects</a>
+                    <a href="https://rskworld.in/contact.php">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Tutorials</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe for new datasets and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 <a href="https://rskworld.in">RSK World</a>. All rights reserved.</p>
+                <p>Developed with <i class="fas fa-heart" style="color: #ff6b6b;"></i> by <strong>Molla Samser</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Code copied to clipboard!</span>
+    </div>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+</body>
+</html>

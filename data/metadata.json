@@ -1,0 +1,193 @@
+{
+    "_comment": "Image Classification Dataset - Metadata | Author: Molla Samser | https://rskworld.in",
+    "dataset_info": {
+        "name": "Image Classification Dataset",
+        "version": "1.0.0",
+        "author": "Molla Samser",
+        "email": "help@rskworld.in",
+        "website": "https://rskworld.in",
+        "license": "MIT",
+        "created_date": "2025-01-01",
+        "last_updated": "2025-12-25"
+    },
+    "statistics": {
+        "total_images": 10000,
+        "total_categories": 15,
+        "splits": {
+            "train": {
+                "images": 7000,
+                "percentage": 70
+            },
+            "validation": {
+                "images": 1500,
+                "percentage": 15
+            },
+            "test": {
+                "images": 1500,
+                "percentage": 15
+            }
+        },
+        "image_formats": ["jpg", "jpeg", "png"],
+        "average_resolution": {
+            "width": 224,
+            "height": 224
+        },
+        "color_mode": "RGB",
+        "total_size_mb": 500
+    },
+    "categories": [
+        {
+            "id": 0,
+            "name": "animals",
+            "display_name": "Animals",
+            "description": "Images of various animals including dogs, cats, birds, etc.",
+            "count": 1500,
+            "subcategories": ["dogs", "cats", "birds", "fish", "wildlife"]
+        },
+        {
+            "id": 1,
+            "name": "vehicles",
+            "display_name": "Vehicles",
+            "description": "Images of cars, trucks, motorcycles, and other vehicles.",
+            "count": 1200,
+            "subcategories": ["cars", "trucks", "motorcycles", "bicycles", "buses"]
+        },
+        {
+            "id": 2,
+            "name": "nature",
+            "display_name": "Nature",
+            "description": "Natural landscapes, forests, mountains, and scenery.",
+            "count": 1000,
+            "subcategories": ["forests", "mountains", "beaches", "deserts", "lakes"]
+        },
+        {
+            "id": 3,
+            "name": "food",
+            "display_name": "Food",
+            "description": "Various food items and dishes.",
+            "count": 800,
+            "subcategories": ["fruits", "vegetables", "dishes", "desserts", "beverages"]
+        },
+        {
+            "id": 4,
+            "name": "buildings",
+            "display_name": "Buildings",
+            "description": "Architecture, houses, and structures.",
+            "count": 900,
+            "subcategories": ["houses", "skyscrapers", "monuments", "bridges", "temples"]
+        },
+        {
+            "id": 5,
+            "name": "fashion",
+            "display_name": "Fashion",
+            "description": "Clothing, accessories, and fashion items.",
+            "count": 700,
+            "subcategories": ["shirts", "dresses", "shoes", "accessories", "bags"]
+        },
+        {
+            "id": 6,
+            "name": "aircraft",
+            "display_name": "Aircraft",
+            "description": "Airplanes, helicopters, and flying vehicles.",
+            "count": 600,
+            "subcategories": ["airplanes", "helicopters", "drones", "jets", "balloons"]
+        },
+        {
+            "id": 7,
+            "name": "sports",
+            "display_name": "Sports",
+            "description": "Sports equipment and activities.",
+            "count": 800,
+            "subcategories": ["football", "basketball", "tennis", "swimming", "cricket"]
+        },
+        {
+            "id": 8,
+            "name": "instruments",
+            "display_name": "Musical Instruments",
+            "description": "Various musical instruments.",
+            "count": 500,
+            "subcategories": ["guitar", "piano", "drums", "violin", "flute"]
+        },
+        {
+            "id": 9,
+            "name": "electronics",
+            "display_name": "Electronics",
+            "description": "Electronic devices and gadgets.",
+            "count": 700,
+            "subcategories": ["phones", "laptops", "cameras", "tablets", "headphones"]
+        },
+        {
+            "id": 10,
+            "name": "furniture",
+            "display_name": "Furniture",
+            "description": "Home and office furniture.",
+            "count": 600,
+            "subcategories": ["chairs", "tables", "sofas", "beds", "desks"]
+        },
+        {
+            "id": 11,
+            "name": "plants",
+            "display_name": "Plants",
+            "description": "Flowers, trees, and vegetation.",
+            "count": 700,
+            "subcategories": ["flowers", "trees", "succulents", "herbs", "indoor_plants"]
+        },
+        {
+            "id": 12,
+            "name": "people",
+            "display_name": "People",
+            "description": "Human figures and portraits.",
+            "count": 500,
+            "subcategories": ["portraits", "groups", "activities", "professions"]
+        },
+        {
+            "id": 13,
+            "name": "art",
+            "display_name": "Art",
+            "description": "Paintings, sculptures, and artistic works.",
+            "count": 400,
+            "subcategories": ["paintings", "sculptures", "drawings", "digital_art"]
+        },
+        {
+            "id": 14,
+            "name": "tools",
+            "display_name": "Tools",
+            "description": "Hand tools and equipment.",
+            "count": 400,
+            "subcategories": ["hand_tools", "power_tools", "gardening", "kitchen"]
+        }
+    ],
+    "preprocessing": {
+        "resize": [224, 224],
+        "normalization": {
+            "method": "min_max",
+            "range": [0, 1]
+        },
+        "augmentation_applied": false
+    },
+    "recommended_models": [
+        "ResNet50",
+        "VGG16",
+        "EfficientNetB0",
+        "MobileNetV2",
+        "InceptionV3"
+    ],
+    "benchmark_results": {
+        "ResNet50": {
+            "accuracy": 0.94,
+            "f1_score": 0.93,
+            "training_time_hours": 2.5
+        },
+        "VGG16": {
+            "accuracy": 0.92,
+            "f1_score": 0.91,
+            "training_time_hours": 3.0
+        },
+        "EfficientNetB0": {
+            "accuracy": 0.95,
+            "f1_score": 0.94,
+            "training_time_hours": 1.8
+        }
+    }
+}
+

@@ -1,0 +1,101 @@
+# ===================================================================================
+#     Project: Image Classification Dataset
+#     Description: Git ignore file for the project.
+#     
+#     Author: Molla Samser
+#     Email: help@rskworld.in
+#     Phone: +91 93305 39277
+#     Website: https://rskworld.in
+#     
+#     © 2025 RSK World. All rights reserved.
+# ===================================================================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Dataset images (keep structure, ignore images)
+dataset/**/*.jpg
+dataset/**/*.jpeg
+dataset/**/*.png
+dataset/**/*.bmp
+dataset/**/*.gif
+!dataset/*/.gitkeep
+
+# Model files (large files)
+models/*.h5
+models/*.hdf5
+models/*.pkl
+models/*.pth
+models/*.pt
+!models/.gitkeep
+
+# Results (generated)
+results/*.png
+results/*.jpg
+results/*.csv
+!results/.gitkeep
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Environment variables
+.env
+.env.local
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
